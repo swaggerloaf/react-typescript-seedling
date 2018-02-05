@@ -1,0 +1,29 @@
+{
+  "name": "react-typescript-seedling",
+  "version": "1.0.0",
+  "description": "Seedling for TypeScript and React",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server  --watch --inline ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swaggerloaf/react-typescript-seedling.git"
+  },
+  "keywords": ["typescript"],
+  "devDependencies": {
+    "awesome-typescript-loader": "3.4.1",
+    "typescript": "2.7.1",
+    "tslint":"5.9.1",
+    "tslint-react": "^3.4.0",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.11.1"
+  },
+  "author": "Ultimate Angular",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swaggerloaf/react-typescript-seedling/issues"
+  },
+  "homepage": "https://github.com/swaggerloaf/react-typescript-seedling#readme"
+}
