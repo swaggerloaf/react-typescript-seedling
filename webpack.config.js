@@ -1,18 +1,23 @@
 module.exports = {
-  entry: './src/app.ts',
-  output: {
-      filename: 'app.js',
-      path: __dirname + './dist'
-  },
+    entry: "./src/index.tsx",
+    output: {
+        filename: "bundle.js",
+        path: __dirname + "/dist"
+    },
+    
   resolve: {
-      extensions: ['.ts', '.js']
+      extensions: ['.ts', '.js', '.tsx']
   },
   module: {
       rules: [
-          { test: /\.ts$/, use: 'awesome-typescript-loader'}
+          { test: /\.tsx$/, use: 'awesome-typescript-loader'}
       ]
   },
   devServer: {
       port: 3000,
   },
+  externals: {
+    "react": "React",
+    "react-dom": "ReactDOM"
+}
 };
